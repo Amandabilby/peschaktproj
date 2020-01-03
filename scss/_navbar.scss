@@ -1,0 +1,174 @@
+.nav {
+    height: 6rem;
+    background-color: black;
+    opacity: 0.3;
+    transition: 1s;
+    animation-duration: 4s;
+
+
+}
+
+.nav:hover {
+    opacity:0.8;
+    
+}
+
+#logga {
+    position: absolute;
+    top: -1.5rem;
+    margin-left: 6rem;
+    width: 20rem;
+    height: 9rem;
+}
+
+#logga:hover {
+    animation-duration: 4s;
+    transition: 0.5s;
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 628px) {
+    #logga {
+        position: absolute;
+        width: 14rem;
+        height: 7rem;
+        top: -0.5rem;
+        margin-left: 1rem;
+    }
+}
+
+
+.navtext {
+    position: absolute;
+    top: 2.3rem;
+    right:7rem;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+    #kontakt {
+        padding-right: 2rem;
+        
+    }
+
+    #kontakt {
+    color: white;
+    text-decoration: none;
+
+            
+    }
+
+    #hem  {
+        padding-right: 2rem;
+        color: white;
+        text-decoration: none;
+        
+    }
+
+    #maskiner  {
+        padding-right: 2rem;
+        color: white;
+        text-decoration: none;
+        
+    }
+
+    #maskiner:hover {
+        animation-name: example;
+        animation-duration: 4s;
+        transition: 0.5s;
+        opacity: 0.2;
+    }
+
+    #tjanster  {
+        padding-right: 2rem;
+        color: white;
+        text-decoration: none;
+        
+    }
+    #tjanster:hover {
+        animation-name: example;
+        animation-duration: 4s;
+        transition: 0.5s;
+        opacity: 0.2;
+    }
+
+
+    #kontakt:hover {
+        animation-name: example;
+        transition: 0.5s;
+        opacity: 0.2;
+    }
+
+   
+
+    
+
+    #tjanster {
+        padding-right: 2rem;
+    }
+
+    #referenser  {
+        padding-right: 2rem;
+        color: white;
+        text-decoration: none;
+        
+    }
+
+    #referenser:hover {
+        animation-name: example;
+        animation-duration: 4s;
+        transition: 0.5s;
+        opacity: 0.2;
+    }
+
+    @media screen and (max-width: 628px) {
+.navtext {
+    right: 1rem;
+}
+    }
+
+
+.navtext .icon {
+    display: none;
+    text-decoration: none;
+    color: white;
+  }
+
+  @media screen and (max-width: 1300px) {
+    .navtext a:not(:first-child) {display: none;}
+
+    .navtext a.icon {
+      float: right;
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 1300px) {
+    .navtext.responsive {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex; 
+        flex-direction: column; 
+        background-color: black;
+        padding: 1rem;
+        animation-duration: 2s;
+    transition: 0.3s;
+    line-height: 3;
+    z-index: 10;
+    }
+
+    .navtext.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navtext.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }

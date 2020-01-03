@@ -1,0 +1,26 @@
+
+
+#TjanstContainer {
+    position: relative;
+    left: 23%;
+    padding: 5rem;
+    margin: 5rem;
+    text-align: center;
+    width: 40rem;
+    height: 20rem;
+    background: white;
+    opacity: 0.7;
+    color: black;
+    text-align: center;
+    box-shadow: 0px 0px 17px 9px rgba(222,222,222,0.08);
+
+}
+#TjanstContainer:hover {
+    opacity: 0.9;
+    animation-duration: 4s;
+    transition: 0.5s;
+}
+#VaraTjanster {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
