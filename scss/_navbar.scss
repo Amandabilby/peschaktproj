@@ -1,4 +1,5 @@
 .nav {
+    z-index: 0;
     height: 6rem;
     background-color: black;
     opacity: 0.3;
@@ -35,6 +36,7 @@
         top: -0.5rem;
         margin-left: 1rem;
     }
+   
 }
 
 
@@ -67,6 +69,14 @@
         text-decoration: none;
         
     }
+
+    #hem:hover {
+        animation-name: example;
+        animation-duration: 4s;
+        transition: 0.5s;
+        opacity: 0.2;
+    }
+
 
     #maskiner  {
         padding-right: 2rem;
@@ -123,6 +133,14 @@
         transition: 0.5s;
         opacity: 0.2;
     }
+
+    .icon:hover {
+        animation-name: example;
+        animation-duration: 4s;
+        transition: 0.5s;
+        opacity: 0.2;
+    }
+
 
     @media screen and (max-width: 628px) {
 .navtext {

@@ -24,6 +24,20 @@ body {
     font-size: 24px;
 }
 
+@media screen and (max-width: 650px) {
+  #KontaktaOss {
+font-size: 24px;
+  }
+
+.MailOchTel {
+   
+    font-size: 14px;
+}
+.container {
+  width: 80%;
+  font-size: 12px;
+}
+}
 
 div,
 textarea,
