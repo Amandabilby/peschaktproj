@@ -6,84 +6,35 @@
     height: 10rem;
     color: white;
     list-style-type: none;
-}
 
-ul {
-    list-style-type: none;
-
-}
-
-#ftrub {
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    padding-bottom: 1rem;
-}
-
-.ftlogga {
-   width: 15rem;
-   height: 7rem;
-}
-
-.ftlogga:hover {
-    opacity: 0.5;
- }
- 
-
-.tjanster {
-    position: relative;
-    top: 10rem;
-    color: white;
-    text-align: center;
-    font-size: 62px;
-    opacity: 0.9;
-}
-
-.litentext {
-    position: relative;
-    top: 10rem;
-    color: white;
-    text-align: center;
-    font-size: 34px;
-    font-style: italic;
-    opacity: 0.8;
-    font-family: 'Gelasio', serif;
-    letter-spacing: 3px;
-}
-
-@media screen and (max-width: 800px) {
-
-    .partone {
-        height: 40rem;
-       display: flex;
-       flex-direction: column;
-       padding-left: 7rem;
-       padding-right: 7rem;
-       text-align: center;
-       opacity: 0.8;
+    ul {
+        list-style-type: none;
     
     }
     
-    .tjanster {
-        font-size: 42px;
-        top: 7rem;
+    #ftrub {
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        padding-bottom: 1rem;
     }
     
-    .litentext {
-        font-size: 26px;
+    .ftlogga {
+       width: 15rem;
+       height: 7rem;
     }
-
-    .header {
-        height: 35rem;
-        top: 7rem;
-    }
+    
+    .ftlogga:hover {
+        opacity: 0.5;
+     }
 }
+
 
 @media screen and (max-width: 600px) {
 .footer {
     font-size: 14px;
     flex-direction: column;
 position: relative;
-left: 15%;
+left: 10%;
 padding: 5rem;
 }
 #ftrub {

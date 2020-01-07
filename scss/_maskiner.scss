@@ -6,9 +6,10 @@
     padding: 5rem;
     margin: auto;
     text-align: center;
-    width: 60%;
-    height: 20rem;
-    background: white;
+    width: 35rem;
+    height: 25rem;
+    background: url("../images/excavator.jpg");
+    background-size: cover;
     opacity: 0.7;
     color: black;
     text-align: center;
@@ -24,4 +25,64 @@
 #VaraMaskiner {
     letter-spacing: 3px;
     text-transform: uppercase;
+}
+
+.MaskinRubrik {
+    text-align: center;
+    color: white;
+    padding: 5rem;
+    text-shadow: 0 0 5px #000;
+
+}
+
+#MaskinListaContainer {
+    position: relative;
+    top: 2rem;
+    padding: 2rem;
+    margin: auto;
+    text-align: center;
+    width: 35rem;
+    height: 25rem;
+    background: black;
+    opacity: 0.7;
+    color: white;
+    text-align: center;
+    box-shadow: 0px 0px 17px 9px rgba(222,222,222,0.08);
+    line-height: 4rem;
+    
+}
+
+.MaskinContainers {
+    display: flex;
+}
+
+#VaraMaskinerLista {
+    text-decoration: underline, uppercase;
+}
+
+@media screen and (max-width: 768px) {
+.MaskinRubrik {
+    font-size: 12px;
+}
+
+.MaskinContainers {
+    flex-direction: column;
+}
+
+#MaskinerContainer {
+    margin-bottom: 3rem;
+    width: 20rem;
+    height: 15rem;
+
+}
+
+#MaskinListaContainer {
+font-size: 12px;
+width: 20rem;
+height: 15rem;
+line-height: 2rem;
+
+}
+
+
 }
