@@ -15,9 +15,10 @@
 <body>
 
 <!-- Navbar -->
+<nav>
     <div class="nav">
-<img id="logga" onclick="location.href='index.html';" src="public/images/logga.png">
-<div class="navtext" id="myTopnav">
+      <img id="logga" onclick="location.href='index.html';" src="public/images/logga.png" alt="">
+      <div class="navtext" id="myTopnav">
 
 <a href="index.html" id="hem">Hem</a>
 <a href="kontakt.html" id="kontakt">Kontakt</a>
@@ -28,8 +29,8 @@
   <i class="fa fa-bars"></i></a>
 
 </div>
-
  </div>
+</nav>
 
 <!-- Kontaktinformation & kontaktruta -->
 
@@ -54,25 +55,25 @@
           
           <li>
             <p class="left">
-              <label for="first_name">Förnamn</label>
+              <label>Förnamn</label>
               <input type="text" name="first_name" placeholder="Förnamn" />
             </p>
             <p class="pull-right">
-              <label for="last_name">Efternamn</label>
+              <label>Efternamn</label>
               <input type="text" name="last_name" placeholder="Efternamn" />      
             </p>
           </li>
           
           <li>
             <p>
-              <label for="email">Mail <span class="req">*</span></label>
+              <label>Mail <span class="req">*</span></label>
               <input type="email" name="email" placeholder="Mail" />
             </p>
            
           </li>        
           <li><div class="divider"></div></li>
           <li>
-            <label for="comments">Meddelande</label>
+            <label>Meddelande</label>
             <textarea cols="46" rows="3" name="comments"></textarea>
           </li>
           
@@ -97,22 +98,24 @@
 
 
     <ul class="kontakt">
-        <li id="ftrub">Meny</li>
+        <li class="ftrub">Meny</li>
     
-      <li><i class="fas fa-handshake"></i> Tjänster</li>
-        <li><i class="fas fa-truck-pickup"></i> Maskiner</li>
-        <li><i class="fas fa-comments-dollar"></i>  Begär offert</li>
+        <li onclick="location.href='tjanster.html';"><i class="fas fa-handshake"></i> Tjänster</li>
+        <li onclick="location.href='maskiner.html';"><i class="fas fa-truck-pickup"></i>Maskiner</li>
+        <li onclick="location.href='kontakt.html';"><i class="fas fa-envelope-square"></i> Kontakt</li>
+        <li onclick="location.href='referenser.html';"><i class="far fa-building"></i> Referenser</li>
+
     
     </ul>
 <ul class="kontakt">
-    <li id="ftrub">Kontakt</li>
+    <li class="ftrub">Kontakt</li>
 
   <li><i class="fas fa-phone-square"></i> 070123456</li>
     <li><i class="fas fa-envelope-square"></i> patrik@peschakt.se</li>
     <li><i class="fas fa-map-marker-alt"></i>  Kvarngatan 3E</li>
 
 </ul>
-<img class="ftlogga" onclick="location.href='index.html';" src="public/images/logga.png">
+<img class="ftlogga" onclick="location.href='index.html';" src="public/images/logga.png" alt="">
 
 
 </footer>

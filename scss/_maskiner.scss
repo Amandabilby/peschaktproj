@@ -1,5 +1,5 @@
 
-
+// Style första Diven med bild
 #MaskinerContainer {
     position: relative;
     top: 2rem;
@@ -16,10 +16,8 @@
     box-shadow: 0px 0px 17px 9px rgba(222,222,222,0.08);
 }
 
-#MaskinerContainer:hover {
-    opacity: 0.9;
-    animation-duration: 4s;
-    transition: 0.5s;
+#MaskinerContainer:hover { 
+    @include opacity;
 }
 
 #VaraMaskiner {
@@ -32,8 +30,9 @@
     color: white;
     padding: 5rem;
     text-shadow: 0 0 5px #000;
-
 }
+
+// Style till diven med text om maskinerna
 
 #MaskinListaContainer {
     position: relative;
@@ -49,7 +48,6 @@
     text-align: center;
     box-shadow: 0px 0px 17px 9px rgba(222,222,222,0.08);
     line-height: 4rem;
-    
 }
 
 .MaskinContainers {
@@ -60,6 +58,7 @@
     text-decoration: underline, uppercase;
 }
 
+// Responsivitet till divarna
 @media screen and (max-width: 768px) {
 .MaskinRubrik {
     font-size: 12px;
@@ -73,7 +72,6 @@
     margin-bottom: 3rem;
     width: 20rem;
     height: 15rem;
-
 }
 
 #MaskinListaContainer {
@@ -81,8 +79,5 @@ font-size: 12px;
 width: 20rem;
 height: 15rem;
 line-height: 2rem;
-
 }
-
-
 }

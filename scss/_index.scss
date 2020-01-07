@@ -1,13 +1,36 @@
+// Style till body och allt
 *{
     font-family: $font-fam;
     margin: 0;
-
 }
 
 body {
     background: $bg-col;
 }
 
+// Lite mixins till indexsidan
+@mixin opacityindex {
+    animation-duration: 4s;
+    transition: 0.5s;
+    opacity: 0.7;
+}
+@mixin tjansterolitentext {
+    position: relative;
+    top: 10rem;
+    color: white;
+    text-align: center;
+}
+
+@mixin partonechilds {
+    cursor: pointer;
+    padding-top: 4rem;
+    background-size: cover;
+    margin: 2rem;
+    box-shadow: 0px 0px 17px 9px rgba(222,222,222,0.08);
+    color: white;
+   }
+   
+// Style header
 .header {
 height: 47rem;
 width: 100%;
@@ -18,21 +41,14 @@ background-position: bottom;
 
 
 .tjanster {
-    position: relative;
-    top: 10rem;
-    color: white;
-    text-align: center;
+    @include tjansterolitentext;
     font-size: 62px;
     opacity: 0.9;
     text-shadow: 0 0 5px #000;
-
 }
 
 .litentext {
-    position: relative;
-    top: 10rem;
-    color: white;
-    text-align: center;
+    @include tjansterolitentext;
     font-size: 34px;
     font-style: italic;
     opacity: 0.8;
@@ -42,7 +58,7 @@ background-position: bottom;
 
 }
 
-
+// Börjar style till "part one" med tre rutor
     .partone {
         position: relative;
         top: -5rem;
@@ -53,81 +69,55 @@ background-position: bottom;
        padding-left: 7rem;
        padding-right: 7rem;
        text-align: center;
-      
        opacity: 0.8;
+
        .kontaktaoss {
-        cursor: pointer;
-        padding-top: 4rem;
-        color: white;
         height: 25rem;
         background-image: url("../images/sparks.jpg");
-        background-size: cover;
         grid-row: 1 / 3;
         grid-column: 2 / 3;
-        background-color: white;
-        margin: 2rem;
-        box-shadow: 0px 0px 17px 9px rgba(222,222,222,0.08);
-    
-    }
-    
-    .kontaktaoss:hover {
-        animation-duration: 4s;
-        transition: 0.5s;
-        opacity: 0.7;
-    }
-    .offert:hover {
-        animation-duration: 4s;
-        transition: 0.5s;
-        opacity: 0.7;
-    }
-    .referenser:hover {
-        animation-duration: 4s;
-        transition: 0.5s;
-        opacity: 0.7;
-    }
+        @include partonechilds;
+        }
+   
     
     .offert {
-        cursor: pointer;
-        padding-top: 4rem;
-        color: white;
         font-size: 24px;
         background-image: url("../images/snow.jpg");
-        background-size: cover;
         background-position: bottom;
         grid-row: 1;
         grid-column: 1 / 2;
-        margin: 2rem;
-        box-shadow: 0px 0px 17px 9px rgba(222,222,222,0.08);
-    
+        @include partonechilds;
     }
     
     .referenser {
-        cursor: pointer;
-        padding-top: 4rem;
-        color: white;
         background-image: url("../images/construction.jpg");
-        background-size: cover;
         background-position: bottom;
-        margin: 2rem;
         grid-row: 2;
         grid-column: 1 / 2;
-        box-shadow: 0px 0px 17px 9px rgba(222,222,222,0.08);
-    
+        @include partonechilds;
     }
-    
-    
+
+    .kontaktaoss:hover {
+        @include opacityindex;
     }
+
+    .offert:hover {
+        @include opacityindex;
+
+    }
+    .referenser:hover {
+        @include opacityindex;
+
+    }}
 
 .hr {
     opacity: 0.2;
     margin: 5rem;
 }
 
-
-
+// Partone responsiv
 @media screen and (max-width: 800px) {
-
-    .partone {
+        .partone {
         font-size: 16px;
         height: 55rem;
         width: 100%;
@@ -138,35 +128,26 @@ background-position: bottom;
        text-align: center;
        opacity: 0.8;
        margin-bottom: 15rem;
-    
     }
 
     .kontaktaoss {
         padding-top: 2rem;
         padding-bottom: 2rem;
-
         height: 15rem;
         width: 90%;
-
     }
 
-
-.offert {
+    .offert {
     padding-bottom: 2rem;
+    height: 15rem;
+    width: 90%;
+    }
 
- height: 15rem;
- width: 90%;
-}
+    .referenser {
+    height: 15rem;
+    width: 90%;
+    }
 
-.referenser {
-
-  height: 15rem;
-        width: 90%;
-
-}
-
-
-    
     .tjanster {
         font-size: 42px;
         top: 7rem;
@@ -175,7 +156,6 @@ background-position: bottom;
     .litentext {
         font-size: 26px;
         top: 7rem;
-
     }
 
     .header {
@@ -184,24 +164,46 @@ background-position: bottom;
     }
 }
 
-#pil {
+#pil1 {
     font-size: 52px;
-   
 }
 
-#pil:hover {
+#pil1:hover {
+    -webkit-animation: heartbeat 3s ease-in-out infinite both;
+    animation: heartbeat 3s ease-in-out infinite both;
+    opacity: 0.7;
+}
+
+#pil2 {
+    font-size: 52px;
+}
+
+#pil2:hover {
+    -webkit-animation: heartbeat 3s ease-in-out infinite both;
+    animation: heartbeat 3s ease-in-out infinite both;
+    opacity: 0.7;
+}
+
+#pil3 {
+    font-size: 52px;
+}
+
+#pil3:hover {
     -webkit-animation: heartbeat 3s ease-in-out infinite both;
     animation: heartbeat 3s ease-in-out infinite both;
     opacity: 0.7;
 }
 
 @media screen and (max-width: 600px) {
-   
-
-    #pil {
+    #pil1 {
         font-size: 32px;
     }
-
+    #pil2 {
+        font-size: 32px;
+    }
+    #pil3 {
+        font-size: 32px;
+    }
     .kontaktaoss {
     }
 
@@ -212,9 +214,9 @@ background-position: bottom;
 .litentext {
   font-size: 17px;
 }
-
 }
 
+// Animationer till pilen i part-one rutorna
 @-webkit-keyframes heartbeat {
     from {
       -webkit-transform: scale(1);
@@ -284,6 +286,7 @@ background-position: bottom;
     }
   }
 
+  // Partone responsiv
 
 @media screen and (max-width: 800px) {
 
@@ -295,7 +298,6 @@ background-position: bottom;
        padding-right: 7rem;
        text-align: center;
        opacity: 0.8;
-    
     }
     
     .tjanster {

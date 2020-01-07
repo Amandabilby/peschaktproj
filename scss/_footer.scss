@@ -1,4 +1,5 @@
 
+// Footer style
 .footer {
     display: flex;
     justify-content: space-evenly;
@@ -6,16 +7,17 @@
     height: 10rem;
     color: white;
     list-style-type: none;
+    cursor: pointer;
 
     ul {
         list-style-type: none;
-    
     }
     
-    #ftrub {
+    .ftrub {
         text-transform: uppercase;
         letter-spacing: 3px;
         padding-bottom: 1rem;
+        padding-top: 1rem;
     }
     
     .ftlogga {
@@ -24,25 +26,32 @@
     }
     
     .ftlogga:hover {
-        opacity: 0.5;
-     }
+        @include opacityindex;
+    }
+
+    a {
+        color: white;
+    text-decoration: none;
+    }
 }
 
-
-@media screen and (max-width: 600px) {
-.footer {
+    // Footer responsiv gör loggan och text mindre
+    @media screen and (max-width: 600px) {
+    .footer {
     font-size: 14px;
     flex-direction: column;
-position: relative;
-left: 10%;
-padding: 5rem;
-}
-#ftrub {
+    position: relative;
+    left: 10%;
+    padding: 5rem;
+    }
+
+    #ftrub {
     margin-top: 3rem;
-}
-.ftlogga {
+    }
+    
+    .ftlogga {
     width: 12rem;
     height: 5.5rem;
     padding-top: 5rem;
- } 
-}
+    } 
+    }

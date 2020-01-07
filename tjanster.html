@@ -15,8 +15,9 @@
 <body>
 
 <!-- Navbar -->
+<nav>
     <div class="nav">
-<img id="logga" onclick="location.href='index.html';" src="public/images/logga.png">
+<img id="logga" onclick="location.href='index.html';" src="public/images/logga.png" alt="">
 <div class="navtext" id="myTopnav">
 
     <a href="index.html" id="hem">Hem</a>
@@ -28,8 +29,9 @@
       <i class="fa fa-bars"></i></a>
 
 </div>
-
  </div>
+</nav>
+
  <!-- Rubrik -->
 
 <div id="TjanstRubrik">Våra tjänster</div>
@@ -40,7 +42,7 @@
 Vi utför alla slags mark- samt asfalteringsarbeten. Vi transporterar även jord, grus samt makadam och utför diverse lyft med kranbil. Andra tjänster som vi utför inkluderar men är inte begränsat till schaktarbeten, såsom grunder, dräneringar och finplanering av tomter. Vi har tillgång till såväl små- som stora maskiner. Vi berättar gärna mera om våra tjänster, om du hör av dig till oss.
 </div>
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2035.9058544544475!2d18.065469751413723!3d59.31782901889694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f77e4e10c91d1%3A0x28877aace04ab255!2sKvarngatan%203%2C%20118%2047%20Stockholm!5e0!3m2!1ssv!2sse!4v1578413847800!5m2!1ssv!2sse" width="95%" height="450" frameborder="0" allowfullscreen="" id="karta"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2035.9058544544475!2d18.065469751413723!3d59.31782901889694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f77e4e10c91d1%3A0x28877aace04ab255!2sKvarngatan%203%2C%20118%2047%20Stockholm!5e0!3m2!1ssv!2sse!4v1578413847800!5m2!1ssv!2sse" height="450" allowfullscreen="" id="karta"></iframe>
 
 
 <hr class="hr">
@@ -50,22 +52,25 @@ Vi utför alla slags mark- samt asfalteringsarbeten. Vi transporterar även jord
 
 
     <ul class="kontakt">
-        <li id="ftrub">Meny</li>
+        <li class="ftrub">Meny</li>
     
-      <li><i class="fas fa-handshake"></i> Tjänster</li>
-        <li><i class="fas fa-truck-pickup"></i> Maskiner</li>
-        <li><i class="fas fa-comments-dollar"></i>  Begär offert</li>
+       
+      <li onclick="location.href='tjanster.html';"><i class="fas fa-handshake"></i> Tjänster</li>
+      <li onclick="location.href='maskiner.html';"><i class="fas fa-truck-pickup"></i>Maskiner</li>
+      <li onclick="location.href='kontakt.html';"><i class="fas fa-envelope-square"></i> Kontakt</li>
+      <li onclick="location.href='referenser.html';"><i class="far fa-building"></i> Referenser</li>
+
     
     </ul>
 <ul class="kontakt">
-    <li id="ftrub">Kontakt</li>
+    <li class="ftrub">Kontakt</li>
 
   <li><i class="fas fa-phone-square"></i> 070123456</li>
     <li><i class="fas fa-envelope-square"></i> patrik@peschakt.se</li>
     <li><i class="fas fa-map-marker-alt"></i>  Kvarngatan 3E</li>
 
 </ul>
-<img class="ftlogga" onclick="location.href='index.html';" src="public/images/logga.png">
+<img class="ftlogga" onclick="location.href='index.html';" src="public/images/logga.png" alt="">
 
 
 </footer>

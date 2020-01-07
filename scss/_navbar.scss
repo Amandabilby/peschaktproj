@@ -1,3 +1,18 @@
+//Mixins till navbar
+@mixin navbartext {
+    color: white;
+    text-decoration: none;
+    padding-right: 2rem;
+}
+
+@mixin navbartexthover {
+    animation-name: example;
+    animation-duration: 4s;
+    transition: 0.5s;
+    opacity: 0.2;
+}
+
+//Navbar style & logga
 .nav {
     z-index: 0;
     height: 6rem;
@@ -5,8 +20,6 @@
     opacity: 0.3;
     transition: 1s;
     animation-duration: 4s;
-
-
 }
 
 .nav:hover {
@@ -28,6 +41,7 @@
     opacity: 0.5;
 }
 
+// Responsiv logga
 @media screen and (max-width: 628px) {
     #logga {
         position: absolute;
@@ -36,10 +50,9 @@
         top: -0.5rem;
         margin-left: 1rem;
     }
-   
-}
+ }
 
-
+// Menytexten
 .navtext {
     position: absolute;
     top: 2.3rem;
@@ -52,96 +65,60 @@
 }
 
     #kontakt {
-        padding-right: 2rem;
-        
-    }
-
-    #kontakt {
-    color: white;
-    text-decoration: none;
-
-            
+    @include navbartext;      
     }
 
     #hem  {
-        padding-right: 2rem;
-        color: white;
-        text-decoration: none;
-        
+        @include navbartext;      
     }
 
     #hem:hover {
-        animation-name: example;
-        animation-duration: 4s;
-        transition: 0.5s;
-        opacity: 0.2;
+       @include navbartexthover;
     }
 
 
     #maskiner  {
-        padding-right: 2rem;
-        color: white;
-        text-decoration: none;
+        @include navbartext;      
         
     }
 
     #maskiner:hover {
-        animation-name: example;
-        animation-duration: 4s;
-        transition: 0.5s;
-        opacity: 0.2;
+        @include navbartexthover;
     }
 
     #tjanster  {
-        padding-right: 2rem;
-        color: white;
-        text-decoration: none;
+        @include navbartext;      
+
         
     }
     #tjanster:hover {
-        animation-name: example;
-        animation-duration: 4s;
-        transition: 0.5s;
-        opacity: 0.2;
+        @include navbartexthover;
     }
 
 
     #kontakt:hover {
-        animation-name: example;
-        transition: 0.5s;
-        opacity: 0.2;
+        @include navbartexthover;
+
     }
 
    
-
-    
-
-    #tjanster {
-        padding-right: 2rem;
-    }
-
     #referenser  {
-        padding-right: 2rem;
-        color: white;
-        text-decoration: none;
+        @include navbartext;      
+
         
     }
 
     #referenser:hover {
-        animation-name: example;
-        animation-duration: 4s;
-        transition: 0.5s;
-        opacity: 0.2;
+        @include navbartexthover;
+
     }
 
     .icon:hover {
-        animation-name: example;
-        animation-duration: 4s;
-        transition: 0.5s;
-        opacity: 0.2;
+        @include navbartexthover;
+
     }
 
-
+// Responsiv meny/hamburgermeny
     @media screen and (max-width: 628px) {
 .navtext {
     right: 1rem;

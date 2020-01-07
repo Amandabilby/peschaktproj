@@ -1,4 +1,11 @@
 
+@mixin opacity {
+    opacity: 0.9;
+    animation-duration: 4s;
+    transition: 0.5s;
+}
+
+// Text med tjänsterna
 #TjanstContainer {
     position: relative;
     top: 2rem;
@@ -15,12 +22,12 @@
     font-size: 20px;
 
 }
+
 #TjanstContainer:hover {
-    opacity: 0.9;
-    animation-duration: 4s;
-    transition: 0.5s;
+ @include opacity;
 }
 
+//Rubriken till tjänster
 #TjanstRubrik {
     text-align: center;
     color: white;
@@ -38,17 +45,21 @@
     text-transform: uppercase;
 }
 
+// Karta som har lite opacity när man inte håller över musen
 #karta {
     position: relative;
     top: 80px;
     margin: 2rem;
     box-shadow: 0px 0px 17px 9px rgba(222,222,222,0.08);
-opacity: 0.5;
+    opacity: 0.5;
+    width: 95%;
 }
 
 #karta:hover {
-    opacity: 0.9;
+    @include opacity;
 }
+
+// Allt innebåll responsivt
 
 @media screen and (max-width: 768px) {
     #karta {

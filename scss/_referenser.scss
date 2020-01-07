@@ -1,24 +1,25 @@
 
-#VaraReferenser {
+@mixin reftextstyle {
     letter-spacing: 3px;
     text-transform: uppercase;
     color: white;
     text-align: center;
     margin: 4rem;
+}
+// Rubrik och undertext till referenserna
+#VaraReferenser {
+    @include reftextstyle;
     font-size: 52px;
 }
 
 
 #VaraReferenserText {
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: white;
-    text-align: center;
-    margin: 4rem;
+    @include reftextstyle;
     font-size: 18px;
 }
 
-#bild {
+// Stylar loggor till referenserna
+.bild {
     width: 15rem;
     margin: 2rem;
 }
@@ -26,28 +27,24 @@
 #bild:hover {
     opacity: 0.6;
 }
+
 .RefBilder {
     display: grid;
     grid-template-columns: auto auto;
     margin: 7rem;
     justify-content: space-evenly;
     text-align: center;
-    
-}
+    }
 
+    // Responsiva loggor och rubrik
 @media screen and (max-width: 768px) {
     .RefBilder {
         flex-direction: column;
     }
-    #bild {
+    .bild {
     width: 10rem;
 }
 #VaraReferenser {
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: white;
-    text-align: center;
-    margin: 4rem;
     font-size: 32px;
 }
 #VaraReferenserText {
